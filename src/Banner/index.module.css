@@ -1,13 +1,21 @@
+.fullBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .btnCadastrar {
-  position: absolute;
+  display: flex;
   width: 265px;
   height: 52px;
-  top: 409.37px;
+  justify-content: center;
 
-  background-color: #65fadd;
+  background: #65fadd;
+  border-radius: 6px;
 }
 
 .txtBtnCadastrar {
+  display: flex;
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
@@ -19,15 +27,26 @@
   color: #2f71fd;
 }
 
+.contentBox {
+  display: flex;
+  width: 489px;
+  height: 215.74px;
+
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
 .contentTitle {
-  position: absolute;
+  display: flex;
   width: 464px;
   height: 48px;
-  top: 245.63px;
 
   font-family: Poppins;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 32px;
   line-height: 48px;
   /* identical to box height, or 150% */
@@ -40,10 +59,9 @@
 }
 
 .contentDescription {
-  position: absolute;
+  display: flex;
   width: 488px;
   height: 53.02px;
-  top: 306.23px;
 
   /* text-1 regular */
 
@@ -60,13 +78,14 @@
 }
 
 .ilustra {
-  position: absolute;
+  display: flex;
   width: 1048.01px;
   height: 507px;
-  left: 521px;
+
+  
 }
 
 .ilustracao {
   width: 1048.01px;
-  height: auto;
+  height: 507px;
 }

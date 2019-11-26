@@ -17,7 +17,9 @@
   width: 1569px;
   height: 507px;
   left: 351px;
-  top: 65.25px;
+  top: 145.25px;
+  align-items: center;
+  justify-content: center;
 }
 
 .Countdown {

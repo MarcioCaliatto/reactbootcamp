@@ -16,7 +16,7 @@ export default class Header extends Component {
           <h1 className={style.divider}> </h1>
           <Button type='ghost' className={style.btnEntrar}>Entrar</Button>
           <div className={style.cadastrase}>
-            <p className={style.txtCadastrase}>Cadastra-se</p>
+            <h1 className={style.txtCadastrase}>Cadastrar-se</h1>
           </div>
         </header>
       </div>

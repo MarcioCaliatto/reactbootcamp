@@ -30,14 +30,14 @@ export default class ListaCursos extends Component {
         title: 'Curso de Robótica',
         description: 'Seja um programador de rob...',
         author: 'Marcello Fornari',
-        price: 'R$19,90',
+        price: 'R$59,90',
         image: imgCurso3
       },
       curso4: {
         title: 'Programação React',
         description: 'Aprenda programar react e f...',
         author: 'Vinicius Sponchiado',
-        price: 'R$19,90',
+        price: 'R$39,90',
         image: imgCurso4
       }
     }
@@ -48,28 +48,31 @@ export default class ListaCursos extends Component {
         <div className={style.gridCursos}>
           <div className={style.curso}>
             <img alt='Curso 1' src={this.state.curso1.image} className={style.cursoImage} />
-            <h1 className={style.cursoTitle}><b>{this.state.curso1.title}</b><p>{this.state.curso1.description}</p></h1>
+            <h1 className={style.cursoTitle}><b>{this.state.curso1.title}</b></h1><p className={style.description}>{this.state.curso1.description}</p>
             <h1 className={style.cardAuthor}>{this.state.curso1.author}</h1>
             <b className={style.cardPrice}>{this.state.curso1.price}</b>
           </div>
 
           <div className={style.curso}>
             <img alt='Curso 2' src={this.state.curso2.image} className={style.cursoImage} />
-            <h1 className={style.cursoTitle}><b>{this.state.curso2.title}</b><p>{this.state.curso2.description}</p></h1>
+            <h1 className={style.cursoTitle}><b>{this.state.curso2.title}</b></h1>
+            <p className={style.description}>{this.state.curso2.description}</p>
             <h1 className={style.cardAuthor}>{this.state.curso2.author}</h1>
             <b className={style.cardPrice}>{this.state.curso2.price}</b>
           </div>
 
           <div className={style.curso}>
             <img alt='Curso 3' src={this.state.curso3.image} className={style.cursoImage} />
-            <h1 className={style.cursoTitle}><b>{this.state.curso3.title}</b><p>{this.state.curso3.description}</p></h1>
+            <h1 className={style.cursoTitle}><b>{this.state.curso3.title}</b></h1>
+            <p className={style.description}>{this.state.curso3.description}</p>
             <h1 className={style.cardAuthor}>{this.state.curso3.author}</h1>
             <b className={style.cardPrice}>{this.state.curso3.price}</b>
           </div>
 
           <div className={style.curso}>
             <img alt='Curso 4' src={this.state.curso4.image} className={style.cursoImage} />
-            <h1 className={style.cursoTitle}><b>{this.state.curso4.title}</b><p>{this.state.curso4.description}</p></h1>
+            <h1 className={style.cursoTitle}><b>{this.state.curso4.title}</b></h1>
+            <p className={style.description}>{this.state.curso4.description}</p>
             <h1 className={style.cardAuthor}>{this.state.curso4.author}</h1>
             <b className={style.cardPrice}>{this.state.curso4.price}</b>
           </div>

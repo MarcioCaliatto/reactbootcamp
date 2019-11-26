@@ -70,7 +70,7 @@
 
   font-family: Poppins;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 14px;
   line-height: 21px;
   /* identical to box height */
@@ -88,6 +88,18 @@
   height: 21px;
   left: 1312.77px;
   top: 41.17px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* white */
+
+  color: #ffffff;
 }
 
 .txtCadastrase {
@@ -99,7 +111,7 @@
 
   font-family: Poppins;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 14px;
   line-height: 21px;
   /* identical to box height */
