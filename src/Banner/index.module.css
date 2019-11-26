@@ -1,0 +1,72 @@
+.btnCadastrar {
+  position: absolute;
+  width: 265px;
+  height: 52px;
+  top: 409.37px;
+
+  background-color: #65fadd;
+}
+
+.txtBtnCadastrar {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  /* blue */
+
+  color: #2f71fd;
+}
+
+.contentTitle {
+  position: absolute;
+  width: 464px;
+  height: 48px;
+  top: 245.63px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: -1px;
+
+  /* blue */
+
+  color: #2f71fd;
+}
+
+.contentDescription {
+  position: absolute;
+  width: 488px;
+  height: 53.02px;
+  top: 306.23px;
+
+  /* text-1 regular */
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  /* Gray 3 */
+
+  color: #828282;
+}
+
+.ilustra {
+  position: absolute;
+  width: 1048.01px;
+  height: 507px;
+  left: 521px;
+}
+
+.ilustracao {
+  width: 1048.01px;
+  height: auto;
+}
