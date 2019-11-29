@@ -21,6 +21,9 @@ function App() {
       <div className="Body"> 
         <Body />
       </div>
+      <div className="Footer">
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -32,6 +32,11 @@
   background: #a563f0;
 }
 
+.Footer {
+  position: absolute;
+  top: 1920px;
+}
+
 .App-link {
   color: #09d3ac;
 }
