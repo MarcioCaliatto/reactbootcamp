@@ -1,53 +1,5 @@
-.App {
-  width: 1920px;
-  height: 2470px;
-  background: #ffffff;
-}
-
-.Header {
-  position: absolute;
-  width: 1920px;
-  height: 105px;
-  left: 0px;
-  top: 0px;
-}
-
-.Banner {
-  position: absolute;
-  width: 1569px;
-  height: 507px;
-  left: 351px;
-  top: 145.25px;
-  align-items: center;
-  justify-content: center;
-}
-
-.Countdown {
-  position: absolute;
-  width: 1920px;
-  height: 150px;
-  left: 0px;
-  top: 652.25px;
-
-  background: #a563f0;
-}
-
-.Footer {
-  position: absolute;
-  top: 1920px;
-}
-
-.Countdown {
-  position: absolute;
-  width: 1920px;
-  height: 150px;
-  left: 0px;
-  top: 652.25px;
-
-  background: #a563f0;
-}
-
-.Footer {
-  position: absolute;
-  top: 1920px;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }

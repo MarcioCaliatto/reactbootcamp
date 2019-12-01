@@ -9,21 +9,13 @@ import Body from "../Body";
 export default class HomePage extends Component {
   render() {
     return (
-      <>
-        <Header className="Header" />
-        <div className="Banner">
-          <Banner className="Banner" />
-        </div>
-        <div className="Countdown">
-          <Countdown />
-        </div>
-        <div className="Body">
-          <Body />
-        </div>
-        <div className="Footer">
-          <Footer />
-        </div>
-      </>
+      <div className="container">
+        <Header />
+        <Banner />
+        <Countdown />
+        <Body />
+        <Footer />
+      </div>
     );
   }
 }

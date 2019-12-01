@@ -25,36 +25,35 @@ export default class Header extends Component {
       signUpVisibility: false
     });
   };
+  //        <div className={style.rect2} />
 
   render() {
     return (
-      <div>
-        <div className={style.rect2} />
-        <div className={style.rect1} />
+      <>
+        <SingUpModal
+          isVisible={this.state.signUpVisibility}
+          onCancel={this.handleSignUpCancel}
+        />
+
         <header className={style.header}>
-          <p className={style.cursos}>Cursos</p>
           <img className={style.logo} alt="" src={logoImg} />
-          <h1 className={style.divider}> </h1>
-          
-          <SingUpModal
-            isVisible={this.state.signUpVisibility}
-            onCancel={this.handleSignUpCancel}
-          />
 
-          <Button
-            type="ghost"
-            className={style.btnCadastrar}
-            onClick={this.handleSignUpVisibility}
+          <div className={style.container}>
+            <h1 className={style.cursos}>Cursos</h1>
+            <div className={style.divider}/>
+            <h1
+              className={style.cursos}
+              onClick={this.handleSignUpVisibility}
             >
-            Cadastrar-se
-          </Button>
+              Cadastrar-se
+          </h1> 
 
-          <Button type="ghost" className={style.btnEntrar}>
-            Entrar
+            <Button type="ghost" className={style.btnEntrar}>
+              Entrar
           </Button>
-
+          </div>
         </header>
-      </div>
+      </>
     );
   }
 }

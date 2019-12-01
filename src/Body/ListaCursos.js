@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import style from "./index.module.css";
 import imgCurso1 from "./curso1.png";
 import imgCurso2 from "./curso2.png";
 import imgCurso3 from "./curso3.png";
@@ -38,7 +37,8 @@ export default class ListaCursos extends Component {
         image: imgCurso4
       }
     ];
-
+    
+    
     const coursesComponent = courses.map(course => {
       return (
         <Card
@@ -53,6 +53,6 @@ export default class ListaCursos extends Component {
 
     if (this.props.isLoading) {
       return <h1> Carregando </h1>;
-    } else return <div className={style.container}>{coursesComponent}</div>;
+    } else return <div style={{display: 'flex'}}>{coursesComponent}</div>;
   }
 }

@@ -20,7 +20,6 @@ class SignUpForm extends Component {
   render() {
     const { getFieldDecorator } = this.props.form;
 
-
     const labelStyling = {
       fontFamily: 'Poppins',
       fontStyle: 'normal',
