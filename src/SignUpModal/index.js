@@ -49,8 +49,7 @@ class SignUpModal extends Component {
       width: '800px',
       height: '811.83px',
       background: '#FFFFFF',
-      boxShadow: '0px 0px 40px rgba(0, 0, 0, 0.2)',
-      borderRadius: '10px'
+      
     }
 
     return (

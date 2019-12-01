@@ -1,8 +1,11 @@
 import React, { Component } from "react";
-import { Form } from "antd";
-import { Input } from "antd";
-import { DatePicker } from "antd";
-
+import {
+  Form,
+  Input,
+  DatePicker,
+  Row,
+  Col,
+} from 'antd';
 
 class SignUpForm extends Component {
   handleOnSubmit = e => {
@@ -34,7 +37,7 @@ class SignUpForm extends Component {
     }
 
     return (
-      <Form id={this.props.id} onSubmit={this.handleOnSubmit} hideRequiredMark>
+      <Form id={this.props.id} onSubmit={this.handleOnSubmit} hideRequiredMark colon={false}>
         <Form.Item label={<label style={labelStyling}>Nome</label>}>
           {getFieldDecorator('firstname', {
             rules: [
@@ -62,29 +65,33 @@ class SignUpForm extends Component {
               }
             ]
           })(<Input placeholder="Digite seu sobrenome" />)}
-        </Form.Item >
-        <Form.Item>
-          <Form.Item label={<label style={labelStyling}>Data de nascimento</label>}>
-            {getFieldDecorator('birthdate', {
-              rules: [
-                {
-                  required: true,
-                  message: "A data de nascimento é obrigatória"
-                }
-              ]
-            })(<DatePicker placeholder="Selecione a data" />)}
-          </Form.Item>
-          <Form.Item label={<label style={labelStyling}>CPF</label>}>
-            {getFieldDecorator('cpfnumber', {
-              rules: [
-                {
-                  required: true,
-                  message: "O numero do cpf é obrigatório"
-                }
-              ]
-            })(<Input placeholder="Digite seu CPF" />)}
-          </Form.Item>
         </Form.Item>
+        <Row >
+          <Col span={12}>
+            <Form.Item label={<label style={labelStyling}>Data de nascimento</label>}>
+              {getFieldDecorator('birthdate', {
+                rules: [
+                  {
+                    required: true,
+                    message: "A data de nascimento é obrigatória"
+                  }
+                ]
+              })(<DatePicker placeholder="Selecione a data"/>)}
+            </Form.Item>
+          </Col>
+          <Col span={12}>
+            <Form.Item label={<label style={labelStyling}>CPF</label>}>
+              {getFieldDecorator('cpfnumber', {
+                rules: [
+                  {
+                    required: true,
+                    message: "O numero do cpf é obrigatório"
+                  }
+                ]
+              })(<Input placeholder="Digite seu CPF"/>)}
+            </Form.Item>
+          </Col>
+        </Row>
         <Form.Item label={<label style={labelStyling}>Email</label>}>
           {getFieldDecorator('email', {
             rules: [
@@ -93,7 +100,7 @@ class SignUpForm extends Component {
                 message: "O email é obrigatório"
               }
             ]
-          })(<Input placeholder="Digite seu Email" />)}
+          })(<Input placeholder="Digite seu email"/>)}
         </Form.Item>
         <Form.Item label={<label style={labelStyling}>Senha</label>}>
           {getFieldDecorator('password', {
