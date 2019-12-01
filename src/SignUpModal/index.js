@@ -11,17 +11,59 @@ class SignUpModal extends Component {
     this.props.history.push("/ProfilePage");
   };
 
+
   render() {
+
+    const btnTxtStyling = {
+      fontFamily: 'Poppins',
+      fontStyle: 'normal',
+      fontWeight: 600,
+      fontSize: '12px',
+      lineHeight: '24px',
+      display: 'flex',
+      alignItems: 'center',
+      textAlign: 'center',
+      color: '#FFFFFF'
+    }
+
+    const btnStyling = {
+      display: 'flex',
+      background: '#2F71FD',
+      borderRadius: '6px'
+    }
+
+    const titleStyling = {
+      color: '#2F71FD',
+      fontFamily: 'Poppins',
+      fontStyle: 'normal',
+      fontWeight: 600,
+      fontSize: '24px',
+      lineHeight: '32px',
+      display: 'flex',
+      alignItems: 'center',
+      textAlign: 'center',
+      letterSpacing: '-1px'
+    }
+
+    const modalBodyStyle = {
+      width: '800px',
+      height: '811.83px',
+      background: '#FFFFFF',
+      boxShadow: '0px 0px 40px rgba(0, 0, 0, 0.2)',
+      borderRadius: '10px'
+    }
+
     return (
       <>
         <Modal
-          title="Cadastro"
+          width='800px'
+          centered
+          title={<title style={titleStyling}>Cadastro</title>}
+          bodyStyle={modalBodyStyle}
           visible={this.props.isVisible}
           onCancel={this.props.onCancel}
           footer={[
-            <Button form="signUpForm" htmlType="submit">
-              Cadastrar
-            </Button>
+            <Button form="signUpForm" htmlType="submit" style={btnStyling}><title style={btnTxtStyling}>Cadastrar</title></Button>
           ]}
         >
           <SignUpForm id="signUpForm" onSubmit={this.onSubmit}></SignUpForm>

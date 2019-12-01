@@ -67,10 +67,7 @@
   height: 21px;
   left: 1209.32px;
   top: 41.17px;
-<<<<<<< HEAD
-=======
   
->>>>>>> 5dae6efdba284e49b571c716a964b409c415f60d
 
   font-family: Poppins;
   font-style: normal;
@@ -86,34 +83,6 @@
   color: #ffffff;
 }
 
-<<<<<<< HEAD
-.cadastrase {
-  position: absolute;
-  width: 98px;
-  height: 21px;
-  left: 1312.77px;
-  top: 41.17px;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  /* identical to box height */
-
-  text-align: center;
-
-  /* white */
-
-  color: #ffffff;
-}
-
-.txtCadastrase {
-  position: absolute;
-  width: 98px;
-  height: 21px;
-  left: 0px;
-  top: 0px;
-=======
 .btnCadastrar {
   position: absolute;
   width: 132px;
@@ -121,7 +90,6 @@
   left: 1312.77px;
   top: 24.5px;
 
->>>>>>> 5dae6efdba284e49b571c716a964b409c415f60d
 
   font-family: Poppins;
   font-style: normal;
@@ -137,10 +105,6 @@
   color: #ffffff;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 5dae6efdba284e49b571c716a964b409c415f60d
 .divider {
   position: absolute;
   width: 2px;

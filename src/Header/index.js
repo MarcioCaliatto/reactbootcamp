@@ -3,10 +3,6 @@ import React, { Component } from "react";
 import { Button } from "antd";
 import style from "./index.module.css";
 import logoImg from "./logo_blue_full.png";
-<<<<<<< HEAD
-
-export default class Header extends Component {
-=======
 import SingUpModal from "../SignUpModal";
 
 export default class Header extends Component {
@@ -30,7 +26,6 @@ export default class Header extends Component {
     });
   };
 
->>>>>>> 5dae6efdba284e49b571c716a964b409c415f60d
   render() {
     return (
       <div>
@@ -40,12 +35,6 @@ export default class Header extends Component {
           <p className={style.cursos}>Cursos</p>
           <img className={style.logo} alt="" src={logoImg} />
           <h1 className={style.divider}> </h1>
-<<<<<<< HEAD
-          <Button type='ghost' className={style.btnEntrar}>Entrar</Button>
-          <div className={style.cadastrase}>
-            <h1 className={style.txtCadastrase}>Cadastrar-se</h1>
-          </div>
-=======
           
           <SingUpModal
             isVisible={this.state.signUpVisibility}
@@ -64,7 +53,6 @@ export default class Header extends Component {
             Entrar
           </Button>
 
->>>>>>> 5dae6efdba284e49b571c716a964b409c415f60d
         </header>
       </div>
     );
