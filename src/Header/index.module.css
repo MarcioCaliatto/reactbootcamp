@@ -1,0 +1,124 @@
+.header {
+  width: 1920px;
+  height: 105px;
+  left: 0px;
+  top: 0px;
+
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.rect2 {
+  /* Rectangle 3 */
+  position: absolute;
+  width: 1920px;
+  height: 5px;
+  left: 0px;
+  top: 100px;
+
+  /* blue */
+
+  background: #2f71fd;
+}
+
+.rect1 {
+  position: absolute;
+  width: 1920px;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+
+  /* carbon */
+
+  background: #333333;
+}
+
+.logo {
+  position: absolute;
+  width: 159.45px;
+  height: 50px;
+  left: 352px;
+  top: 25px;
+}
+
+.btnEntrar {
+  position: absolute;
+  width: 132px;
+  height: 51px;
+  left: 1436px;
+  top: 24.5px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* white */
+
+  color: #ffffff;
+}
+
+.cursos {
+  position: absolute;
+  width: 51px;
+  height: 21px;
+  left: 1209.32px;
+  top: 41.17px;
+  
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* white */
+
+  color: #ffffff;
+}
+
+.btnCadastrar {
+  position: absolute;
+  width: 132px;
+  height: 51px;
+  left: 1312.77px;
+  top: 24.5px;
+
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* white */
+
+  color: #ffffff;
+}
+
+
+.divider {
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  left: 1285.55px;
+  top: 24.5px;
+
+  /* white */
+
+  background: #ffffff;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url(../fonts/Poppins-Regular.ttf) format("truetype");
+}

@@ -1,0 +1,102 @@
+.footer {
+  display: flex;
+  background: #333333;
+  opacity: 0.9;
+  width: 1920px;
+  height: 549.2px;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.blueLine {
+  height: 5px;
+  width: 1920px;
+  background: #2f71fd;
+}
+
+.boxFooter {
+  display: flex;
+  width: 1216px;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+
+.logo {
+  display: flex;
+  width: 159.45px;
+  height: 50px;
+}
+
+.footerOptions {
+  display: flex;
+}
+
+.menuOption {
+  align-self: center;
+
+  padding-left: 55.88px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* Grey */
+
+  color: #acb1ba;
+}
+
+.optionEntrar {
+  align-self: center;
+
+  padding-left: 55.88px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #2f71fd;
+}
+
+.divider {
+  margin-left: 55.88px;
+  height: 40px;
+  border: 2px solid #acb1ba;
+  width: 0px;
+}
+
+.biggerDivider {
+  display: flex;
+  width: 1216px;
+  border: 2px solid white;
+  margin-top: 159px;
+  opacity: 0.2;
+}
+
+.rightsAndSocials {
+  width: 1216px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 83px;
+}
+
+.copyrights {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-align: right;
+
+  color: #b3b3b3;
+}

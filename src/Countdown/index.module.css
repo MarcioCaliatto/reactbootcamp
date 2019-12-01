@@ -1,0 +1,162 @@
+.txtAprenda {
+  position: absolute;
+  width: 250px;
+  height: 32px;
+  left: 352px;
+  top: 35px;
+
+  /* heading-2 */
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -1px;
+
+  /* white */
+
+  color: #ffffff;
+}
+
+.bootcamp {
+  position: absolute;
+  width: 260px;
+  height: 48px;
+  left: 351.97px;
+  top: 75px;
+  /* heading-1 */
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -1px;
+
+  /* white */
+
+  color: #ffffff;
+}
+
+.porApenas {
+  position: absolute;
+  width: 129px;
+  height: 32px;
+  left: 895.5px;
+  top: 35px;
+
+  /* heading-2 */
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -1px;
+
+  /* white */
+
+  color: #ffffff;
+}
+
+.valor {
+  position: absolute;
+  width: 119px;
+  height: 48px;
+  left: 900.5px;
+  top: 75px;
+
+  /* heading-1 */
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -1px;
+
+  /* white */
+
+  color: #ffffff;
+}
+
+.iconHolder {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 1367.6px;
+  top: 71px;
+}
+
+.acabaem {
+  position: absolute;
+  width: 124px;
+  height: 32px;
+  left: 1444.27px;
+  top: 35px;
+
+  /* heading-2 */
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -1px;
+
+  /* white */
+
+  color: #ffffff;
+}
+
+.PromoWidget {
+  position: absolute;
+  width: 125px;
+  height: 48px;
+  left: 1443.02px;
+  top: 85px;
+
+  /* heading-1 */
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -1px;
+
+  /* white */
+
+  color: #ffffff;
+}
