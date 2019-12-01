@@ -1,0 +1,95 @@
+.curso {
+  display: flex;
+  width: 280px;
+  height: 329.81px;
+  margin-bottom: 60.66px;
+
+  flex-direction: column;
+
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.cursoImage {
+  display: flex;
+  width: 280px;
+  height: 150px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.description {
+  display: flex;
+  width: 249.85px;
+  height: 45.57px;
+  align-self: center;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  /* blue */
+
+  color: #2f71fd;
+}
+
+.cardPrice {
+  display: flex;
+  align-self: flex-end;
+
+  margin-bottom: 14.54px;
+  padding-right: 15.05px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* carbon */
+
+  color: #333333;
+}
+
+.cursoTitle {
+  display: flex;
+  width: 249.85px;
+  height: 15.57px;
+  align-self: center;
+  margin-top: 30.87px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  /* blue */
+
+  color: #2f71fd;
+}
+
+.cardAuthor {
+  display: flex;
+  align-self: flex-start;
+  padding-left: 15.1px;
+
+  /* text-2 */
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  text-align: center;
+
+  /* Gray 4 */
+
+  color: #bdbdbd;
+}

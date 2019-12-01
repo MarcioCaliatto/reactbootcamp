@@ -20,6 +20,7 @@
   top: 145.25px;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
 }
 
 .Countdown {
@@ -35,8 +36,21 @@
 .Footer {
   position: absolute;
   top: 1920px;
+=======
+>>>>>>> 5dae6efdba284e49b571c716a964b409c415f60d
 }
 
-.App-link {
-  color: #09d3ac;
+.Countdown {
+  position: absolute;
+  width: 1920px;
+  height: 150px;
+  left: 0px;
+  top: 652.25px;
+
+  background: #a563f0;
+}
+
+.Footer {
+  position: absolute;
+  top: 1920px;
 }
