@@ -5,6 +5,7 @@ import { Switch } from "react-router-dom";
 
 import HomePage from "./HomePage";
 import ProfilePage from "./ProfilePage";
+import CoursePage from "./CoursePage";
 import PageNotFound from "./PageNotFound";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={HomePage} />
         <Route path="/ProfilePage" component={ProfilePage} />
+        <Route path="/CoursePage" component={CoursePage} />
         <Route component={PageNotFound}/>
       </Switch>
     </BrowserRouter>

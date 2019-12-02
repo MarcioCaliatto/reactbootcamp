@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import ListaCursos from "./ListaCursos";
 import style from "./index.module.css";
 
-
-
 export default class Body extends Component {
   render() {
 
