@@ -7,7 +7,7 @@ export default class PromoWidget extends Component{
 
         this.state = {
             timer: moment.duration(0),
-            deadline: moment('2019-11-24T06:00:00')
+            deadline: moment('2019-12-05T06:00:00')
         }
     }
 
@@ -24,7 +24,7 @@ export default class PromoWidget extends Component{
     render() {
         return(
             <div>
-                <p>{this.state.timer.asHours()}</p>
+                <span>{this.state.timer.asHours().toFixed(2)}</span>
             </div>
         )
     }

@@ -66,16 +66,17 @@
 }
 
 .divider {
+  margin-top: 5px;
   margin-left: 55.88px;
   height: 40px;
-  border: 2px solid #acb1ba;
+  border: 1px solid #acb1ba;
   width: 0px;
 }
 
 .biggerDivider {
   display: flex;
   width: 1216px;
-  border: 2px solid white;
+  border: 1px solid white;
   margin-top: 159px;
   opacity: 0.2;
 }

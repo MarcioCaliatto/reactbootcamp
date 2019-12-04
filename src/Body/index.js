@@ -6,13 +6,14 @@ export default class Body extends Component {
   render() {
 
     const stylingGridTitle = {
+      display: 'flex',
+      marginLeft: '32px',
       fontFamily: 'Poppins',
       fontStyle: 'normal',
       fontweight: 600,
       fontSize: '24px',
       lineHeight: '32px',
       /* identical to box height, or 133% */
-      marginLeft: '32px',
       marginBottom: '60px',
       letterSpacing: '-1px',
 
@@ -22,9 +23,9 @@ export default class Body extends Component {
     }
 
     return (
-      <div className={style.bodyContainer} >
-        <h1 style={stylingGridTitle}>Nossos cursos</h1>
-        <div style={{ paddingRight: '30px' }}>
+      <div className={style.bodyContainer}>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <span style={stylingGridTitle}>Nossos cursos</span>
           <ListaCursos isLoading={false} />
           <ListaCursos isLoading={false} />
         </div>

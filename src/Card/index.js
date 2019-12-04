@@ -4,18 +4,19 @@ import style from "./index.module.css";
 export default class Card extends Component {
   render() {
     return (
-      <div className={style.curso}>
+      <div className={style.curso} onClick={this.props.onClick}>
         <img
-          alt="Curso 1"
+          alt="imageCurso"
           src={this.props.image}
           className={style.cursoImage}
         />
-        <h1 className={style.cursoTitle}>
+        <div className={style.separator}/>
+        <span className={style.cursoTitle}>
           <b>{this.props.title}</b>
-        </h1>
-        <p className={style.description}>{this.props.description}</p>
-        <h1 className={style.cardAuthor}>{this.props.author}</h1>
-        <b className={style.cardPrice}>{this.props.price}</b>
+        </span>
+        <span className={style.description}>{this.props.description}</span>
+        <span className={style.cardAuthor}>{this.props.author}</span>
+        <span className={style.cardPrice}>{this.props.price}</span>
       </div>
     );
   }

@@ -4,6 +4,7 @@ import { Button } from "antd";
 import style from "./index.module.css";
 import logoImg from "./logo_blue_full.png";
 import SingUpModal from "../SignUpModal";
+import LoginModal from "../LoginModal";
 
 export default class Header extends Component {
   constructor(props) {
@@ -11,6 +12,7 @@ export default class Header extends Component {
 
     this.state = {
       signUpVisibility: false,
+      loginVisibility: false
     };
   }
 
@@ -25,7 +27,19 @@ export default class Header extends Component {
       signUpVisibility: false
     });
   };
-  //        <div className={style.rect2} />
+
+  handleLoginVisibility = () => {
+    this.setState({
+      loginVisibility: true
+    })
+  }
+
+  handleLoginCancel = () => {
+    this.setState({
+      loginVisibility: false
+    })
+  }
+
 
   render() {
     return (
@@ -34,25 +48,33 @@ export default class Header extends Component {
           isVisible={this.state.signUpVisibility}
           onCancel={this.handleSignUpCancel}
         />
+        <LoginModal
+          isVisible={this.state.loginVisibility}
+          onCancel={this.handleLoginCancel}
+        />
 
         <header className={style.header}>
           <img className={style.logo} alt="" src={logoImg} />
 
           <div className={style.container}>
-            <h1 className={style.cursos}>Cursos</h1>
-            <div className={style.divider}/>
-            <h1
+            <span className={style.cursos}>Cursos</span>
+            <div className={style.divider} />
+            <span
               className={style.cursos}
               onClick={this.handleSignUpVisibility}
             >
               Cadastrar-se
-          </h1> 
+          </span>
 
-            <Button type="ghost" className={style.btnEntrar}>
+            <Button 
+            type="ghost" 
+            className={style.btnEntrar} 
+            onClick={this.handleLoginVisibility}>
               Entrar
           </Button>
           </div>
         </header>
+        <div className={style.rect2} />
       </>
     );
   }

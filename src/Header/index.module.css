@@ -17,7 +17,6 @@
 .rect2 {
   /* Rectangle 3 */
   display: flex;
-  width: 1920px;
   height: 5px;
   left: 0px;
   top: 100px;

@@ -3,13 +3,14 @@ import React, { Component } from 'react';
 import style from './index.module.css';
 import img1 from '../Body/curso1.png';
 import {Button} from 'antd';
+import PlaylistCursos from '../PlaylistCursos';
 
 export default class CourseBody extends Component {
 
     render() {
 
         return (
-            <div style={{display: 'flex', background: '#FFFFFF', justifyContent: 'center', marginTop: '108px'}}>
+            <div style={{display: 'flex', background: '#FFFFFF', justifyContent: 'center', marginTop: '108px', marginBottom: '155px'}}>
                 <div className={style.textContainer}>
                     <h1 className={style.courseTitle}>titulo</h1>
                     <h1 className={style.courseTitle}>subtitulo</h1>
@@ -24,6 +25,7 @@ export default class CourseBody extends Component {
                     <h1 className={style.priceTag}>preço</h1>
                     <Button classname={style.btnBuy} type='primary'>comprar</Button>
                     <h1 className={style.titles}>conteudo do curso</h1>
+                    <PlaylistCursos className={style.playlist}/>
                 </div>
             </div>
         );

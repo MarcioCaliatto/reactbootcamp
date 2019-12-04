@@ -1,52 +1,28 @@
 .background {
-  width: 1920px;
-  height: 150px;
   display: flex;
+  height: 150px;
+  align-items: center;
+  justify-content: space-evenly;
+
   background: #a563f0;
 }
 
-.content {
-  margin-left: 352px;
-  margin-right: 352px;
-  display: flex;
-  align-self: center;
-  flex-direction: row;
-  
-  height: 80px;
-}
-
-.iconHolder {
-  height: 80px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-left: 347px;
-}
 
 .aprendaBox {
-  height: 80px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-self: center;
 }
 
 .valueBox {
-  height: 80px;
-
   display: flex;
-  margin-left: 290px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .timerBox {
-  height: 80px;
-  width: 125px;
-
+  max-width: 125px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }

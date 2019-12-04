@@ -17,11 +17,18 @@
   border-radius: 10px 10px 0px 0px;
 }
 
+.separator {
+  display: flex;
+  height: 5px;
+  background: #333333;
+}
+
 .description {
   display: flex;
   width: 249.85px;
   height: 45.57px;
   align-self: center;
+  margin-top: 5px;
 
   font-family: Poppins;
   font-style: normal;
@@ -38,8 +45,8 @@
 .cardPrice {
   display: flex;
   align-self: flex-end;
+  margin-top: 20px;
 
-  margin-bottom: 14.54px;
   padding-right: 15.05px;
 
   font-family: Poppins;
@@ -47,9 +54,6 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
-
-  /* carbon */
 
   color: #333333;
 }
@@ -59,7 +63,7 @@
   width: 249.85px;
   height: 15.57px;
   align-self: center;
-  margin-top: 30.87px;
+  margin-top: 25.87px;
 
   font-family: Poppins;
   font-style: normal;
@@ -75,21 +79,13 @@
 
 .cardAuthor {
   display: flex;
-  align-self: flex-start;
   padding-left: 15.1px;
-
-  /* text-2 */
 
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  /* identical to box height, or 171% */
-
-  text-align: center;
-
-  /* Gray 4 */
 
   color: #bdbdbd;
 }

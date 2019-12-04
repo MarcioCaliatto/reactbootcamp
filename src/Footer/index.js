@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import style from './index.module.css';
 import logo from './logo_white_full.png';
-import { Icon } from 'antd';
+import { Icon, Divider } from 'antd';
 
 export default class Footer extends Component {
     render() {
@@ -12,18 +12,18 @@ export default class Footer extends Component {
                     <div className={style.boxFooter}>
                         <img className={style.logo} alt="logoWhite" src={logo} />
                         <div className={style.footerOptions}>
-                            <h1 className={style.menuOption}>Politica de Privacidade</h1>
-                            <h1 className={style.menuOption}>Cursos</h1>
-                            <h1 className={style.menuOption}>Sobre</h1>
-                            <h1 className={style.menuOption}>Contato</h1>
-                            <h1 className={style.menuOption}>Cadastrar</h1>
-                            <div className={style.divider} />
-                            <h1 className={style.optionEntrar}>ENTRAR</h1>
+                            <span className={style.menuOption}>Politica de Privacidade</span>
+                            <span className={style.menuOption}>Cursos</span>
+                            <span className={style.menuOption}>Sobre</span>
+                            <span className={style.menuOption}>Contato</span>
+                            <span className={style.menuOption}>Cadastrar</span>
+                            <Divider className={style.divider}type='vertical'/>
+                            <span className={style.optionEntrar}>ENTRAR</span>
                         </div>
                     </div>
                     <div className={style.biggerDivider} />
                     <div className={style.rightsAndSocials}>
-                        <h1 className={style.copyrights}>Copyright 2019 Itsam, desenvolvido pela MASTI</h1>
+                        <span className={style.copyrights}>Copyright 2019 Itsam, desenvolvido pela MASTI</span>
                         <div className={style.iconHolder}>
                             <Icon type="facebook" style={{ fontSize: '30px' }} /> <Icon type="instagram" style={{ fontSize: '30px' }} />
                         </div>

@@ -8,6 +8,7 @@ import { Button } from "antd";
 class SignUpModal extends Component {
   onSubmit = values => {
     console.log(values);
+    //Lógica para outras validações e gravação na db
     this.props.history.push("/ProfilePage");
   };
 

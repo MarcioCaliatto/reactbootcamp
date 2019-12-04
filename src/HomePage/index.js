@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../App.css";
 import Header from "../Header";
 import Banner from "../Banner";
 import Footer from "../Footer";
@@ -9,7 +8,7 @@ import Body from "../Body";
 export default class HomePage extends Component {
   render() {
     return (
-      <div className="container">
+      <div>
         <Header />
         <Banner />
         <Countdown />

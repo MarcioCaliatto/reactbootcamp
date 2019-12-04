@@ -1,6 +1,7 @@
 .bodyContainer {
   display: flex;
-  align-self: center;
-  flex-direction: column;
   margin-top: 150px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

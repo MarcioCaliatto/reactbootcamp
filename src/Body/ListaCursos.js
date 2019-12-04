@@ -1,11 +1,19 @@
 import React, { Component } from "react";
+import { withRouter } from 'react-router-dom';
+
+
 import imgCurso1 from "./curso1.png";
 import imgCurso2 from "./curso2.png";
 import imgCurso3 from "./curso3.png";
 import imgCurso4 from "./curso4.png";
 import Card from "../Card";
 
-export default class ListaCursos extends Component {
+class ListaCursos extends Component {
+
+  handleCardClick = (e) => {
+    this.props.history.push("/CoursePage");
+  }
+
   render() {
     const courses = [
       {
@@ -37,11 +45,12 @@ export default class ListaCursos extends Component {
         image: imgCurso4
       }
     ];
-    
-    
-    const coursesComponent = courses.map(course => {
+
+
+    const coursesComponent = courses.map((course, index) => {
       return (
-        <Card
+        <Card key={index}
+          onClick={this.handleCardClick}
           title={course.title}
           description={course.description}
           author={course.author}
@@ -52,7 +61,9 @@ export default class ListaCursos extends Component {
     });
 
     if (this.props.isLoading) {
-      return <h1> Carregando </h1>;
-    } else return <div style={{display: 'flex'}}>{coursesComponent}</div>;
+      return <h1>Carregando</h1>;
+    } else return <div style={{ display: 'flex' }}>{coursesComponent}</div>;
   }
 }
+
+export default withRouter(ListaCursos)
