@@ -25,7 +25,9 @@ export default class CourseBody extends Component {
                     <h1 className={style.priceTag}>preço</h1>
                     <Button classname={style.btnBuy} type='primary'>comprar</Button>
                     <h1 className={style.titles}>conteudo do curso</h1>
-                    <PlaylistCursos className={style.playlist}/>
+                    <div className={style.playlist} >
+                    <PlaylistCursos />
+                    </div>
                 </div>
             </div>
         );
