@@ -7,8 +7,20 @@ import { Modal } from "antd";
 import { Button } from "antd";
 
 class SignUpModal extends Component {
-  onSubmit =  async values => {
-    
+  constructor(props){
+    super(props)
+
+    this.state = {
+      isLoading: null
+    }
+  }
+
+  onSubmit = async values => {
+
+    this.setState({
+      isLoading: true
+    })
+
     const request = {
       name: values.firstname,
       surname: values.surname,
@@ -18,27 +30,30 @@ class SignUpModal extends Component {
       password: values.password,
     }
 
-    const response = await Axios.post('http://localhost:4000/users', request)
-    console.log(response)
+    try {
+      const response = await Axios.post('http://localhost:4000/users', request)
+      
+    }
+    catch (error) {
+        //tratamento ou exibir msg né fio
+    }
+
+    this.setState({
+      isLoading: false
+    })
   };
 
 
   render() {
 
     const btnTxtStyling = {
+      display: 'block',
       fontFamily: 'Poppins',
       fontStyle: 'normal',
       fontWeight: 600,
       fontSize: '12px',
       lineHeight: '24px',
-      display: 'flex',
-      color: '#FFFFFF'
-    }
-
-    const btnStyling = {
-      display: 'flex',
-      background: '#2F71FD',
-      borderRadius: '6px'
+      color: '#FFFFFF',
     }
 
     const titleStyling = {
@@ -47,7 +62,7 @@ class SignUpModal extends Component {
       fontStyle: 'normal',
       fontWeight: 600,
       fontSize: '24px',
-      lineHeight: '32px',
+      lineHeight: '24px',
       display: 'flex',
       alignItems: 'center',
       textAlign: 'center',
@@ -57,8 +72,6 @@ class SignUpModal extends Component {
     const modalBodyStyle = {
       width: '800px',
       height: '811.83px',
-      background: '#FFFFFF',
-      
     }
 
     return (
@@ -71,7 +84,9 @@ class SignUpModal extends Component {
           visible={this.props.isVisible}
           onCancel={this.props.onCancel}
           footer={[
-            <Button form="signUpForm" htmlType="submit" style={btnStyling}><title style={btnTxtStyling}>Cadastrar</title></Button>
+            <div style={{width: '264px', marginLeft: '250px'}}>
+              <Button loading={this.state.isLoading} block size='large' form="signUpForm" htmlType="submit" type='primary'><title style={btnTxtStyling}>Cadastrar</title></Button>
+            </div>
           ]}
         >
           <SignUpForm id="signUpForm" onSubmit={this.onSubmit}></SignUpForm>

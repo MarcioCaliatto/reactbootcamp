@@ -7,6 +7,7 @@ import {
   Col,
 } from 'antd';
 
+
 class SignUpForm extends Component {
   handleOnSubmit = e => {
     e.preventDefault();
@@ -75,7 +76,7 @@ class SignUpForm extends Component {
                     message: "A data de nascimento é obrigatória"
                   }
                 ]
-              })(<DatePicker placeholder="Selecione a data"/>)}
+              })(<DatePicker style={{display: 'block', marginTop: '4px', marginRight: '15px'}} placeholder="Selecione a data"/>)}
             </Form.Item>
           </Col>
           <Col span={12}>
@@ -87,7 +88,7 @@ class SignUpForm extends Component {
                     message: "O numero do cpf é obrigatório"
                   }
                 ]
-              })(<Input placeholder="Digite seu CPF"/>)}
+              })(<Input size="11" placeholder="Digite seu CPF"/>)}
             </Form.Item>
           </Col>
         </Row>
