@@ -1,15 +1,25 @@
 import React, { Component } from "react";
 import SignUpForm from "../SignUpForm";
 import { withRouter } from "react-router-dom";
+import Axios from 'axios';
 
 import { Modal } from "antd";
 import { Button } from "antd";
 
 class SignUpModal extends Component {
-  onSubmit = values => {
-    console.log(values);
-    //Lógica para outras validações e gravação na db
-    this.props.history.push("/ProfilePage");
+  onSubmit =  async values => {
+    
+    const request = {
+      name: values.firstname,
+      surname: values.surname,
+      birthdate: values.birthdate,
+      cpf: values.cpfnumber,
+      email: values.email,
+      password: values.password,
+    }
+
+    const response = await Axios.post('http://localhost:4000/users', request)
+    console.log(response)
   };
 
 
@@ -22,8 +32,6 @@ class SignUpModal extends Component {
       fontSize: '12px',
       lineHeight: '24px',
       display: 'flex',
-      alignItems: 'center',
-      textAlign: 'center',
       color: '#FFFFFF'
     }
 

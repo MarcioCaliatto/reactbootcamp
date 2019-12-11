@@ -32,6 +32,8 @@ export default class Countdown extends Component {
 
             color: '#FFFFFF'
         }
+        
+        //<PromoWidget />
 
         return (
             <div className={style.background} >
@@ -48,7 +50,6 @@ export default class Countdown extends Component {
                     <Icon type="history" style={{ color: '#65fadd', fontSize: '40px' }} />
                     <span style={textStyleNormal}>Acaba em:</span>
                     <div style={textStyleBold}>
-                        <PromoWidget />
                     </div>
                 </div>
             </div>

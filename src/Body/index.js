@@ -27,7 +27,6 @@ export default class Body extends Component {
         <div style={{ display: 'flex', flexDirection: 'column' }}>
         <span style={stylingGridTitle}>Nossos cursos</span>
           <ListaCursos isLoading={false} />
-          <ListaCursos isLoading={false} />
         </div>
       </div>
     );

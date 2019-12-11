@@ -6,7 +6,6 @@ import { Table } from 'antd';
 export default class PlaylistCursos extends Component {
 
     render() {
-
         const itemStyle = {
             fontFamily: 'Poppins',
             fontStyle: 'normal',
@@ -50,30 +49,8 @@ export default class PlaylistCursos extends Component {
             },
         ]
 
-        const data = [
-            {
-                key: '1',
-                title: '#01 Estratégia de Produto',
-                duration: '06:54'
-            },
-            {
-                key: '2',
-                title: '#02 Personas - na prática',
-                duration: '08:03'
-            },
-            {
-                key: '3',
-                title: '#03 Roadmap - Na prática',
-                duration: '06:12'
-            },
-            {
-                key: '4',
-                title: '#04 Introdução a Sketchs, Wireframes, Pro...',
-                duration: '10:04'
-            }
-        ]
+        const dataSource = this.props.data
 
-
-        return <Table columns={columns} dataSource={data} pagination={false} tableLayout='auto'/>;
+        return <Table columns={columns} dataSource={dataSource} pagination={false} tableLayout='auto'/>;
     }
 }

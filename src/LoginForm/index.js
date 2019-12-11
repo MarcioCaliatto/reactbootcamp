@@ -6,6 +6,7 @@ import { Form, Input } from 'antd';
 class LoginForm extends Component {
 
     handleOnSubmit = (e) => {
+        e.preventDefault()
         this.props.form.validateFields((err, values) => {
             if (!err) {
                 this.props.onSubmit(values)
@@ -45,7 +46,7 @@ class LoginForm extends Component {
                                 message: "E-mail inválido!"
                             }
                         ]
-                    })(<Input placeholder="Digite seu primeiro nome" />)}
+                    })(<Input placeholder="Digite seu email" />)}
                 </Form.Item>
 
                 <Form.Item label={<span style={textStyle}>Senha</span>}>

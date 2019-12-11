@@ -4,7 +4,6 @@ export default class ProfilePage extends Component {
   render() {
     return (
       <>
-        <h1>Teste</h1>
       </>
     );
   }

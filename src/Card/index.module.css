@@ -30,6 +30,7 @@
   align-self: center;
   margin-top: 5px;
 
+  max-lines: 1;
   font-family: Poppins;
   font-style: normal;
   font-weight: 700;

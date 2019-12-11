@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Redirect } from 'react-router-dom'
 
 import { Button } from "antd";
 import style from "./index.module.css";
@@ -7,6 +8,7 @@ import SingUpModal from "../SignUpModal";
 import LoginModal from "../LoginModal";
 
 export default class Header extends Component {
+
   constructor(props) {
     super(props);
 
@@ -31,14 +33,14 @@ export default class Header extends Component {
   handleLoginVisibility = () => {
     this.setState({
       loginVisibility: true
-    })
-  }
+    });
+  };
 
   handleLoginCancel = () => {
     this.setState({
       loginVisibility: false
-    })
-  }
+    });
+  };
 
 
   render() {
@@ -54,7 +56,11 @@ export default class Header extends Component {
         />
 
         <header className={style.header}>
-          <img className={style.logo} alt="" src={logoImg} />
+          <img
+            className={style.logo}
+            alt="Masti Logo"
+            src={logoImg}
+          />
 
           <div className={style.container}>
             <span className={style.cursos}>Cursos</span>
@@ -64,14 +70,15 @@ export default class Header extends Component {
               onClick={this.handleSignUpVisibility}
             >
               Cadastrar-se
-          </span>
+            </span>
 
-            <Button 
-            type="ghost" 
-            className={style.btnEntrar} 
-            onClick={this.handleLoginVisibility}>
+            <Button
+              type="ghost"
+              className={style.btnEntrar}
+              onClick={this.handleLoginVisibility}
+            >
               Entrar
-          </Button>
+            </Button>
           </div>
         </header>
         <div className={style.rect2} />
