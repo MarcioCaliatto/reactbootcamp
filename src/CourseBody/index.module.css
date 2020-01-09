@@ -4,13 +4,24 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  /* identical to box height, or 133% */
 
   letter-spacing: -1px;
 
-  /* carbon */
+  color: #333333;
+}
+
+.descTitle {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+
+  letter-spacing: -1px;
 
   color: #333333;
+
+  margin-top: 50px;
 }
 
 .descricao {
@@ -19,11 +30,24 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  /* or 150% */
-
-  /* Gray 4 */
 
   color: #bdbdbd;
+
+  margin-top: 20px;
+}
+
+.requirements {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+
+  letter-spacing: -1px;
+
+  color: #333333;
+
+  margin-top: 75px;
 }
 
 .courseTitle {
@@ -63,6 +87,25 @@
 
 .btnBuy {
   border-radius: 6px;
+  margin-top: 15px;
+
+  background: #2f71fd;
+  border-radius: 6px;
+}
+
+.btnText {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* white */
+
+  color: #ffffff;
 }
 
 .priceTag {
@@ -74,7 +117,8 @@
   font-weight: bold;
   font-size: 32px;
   line-height: 48px;
-  /* identical to box height, or 150% */
+
+  margin-top: 30px;
 
   letter-spacing: -1px;
 
@@ -83,8 +127,22 @@
   color: #333333;
 }
 
+.courseContent {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+
+  letter-spacing: -1px;
+
+  margin-top: 40px;
+}
+
 .playlist {
   background: #ffffff;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
+
+  margin-top: 19px;
 }

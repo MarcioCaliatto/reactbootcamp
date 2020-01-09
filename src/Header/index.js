@@ -1,20 +1,22 @@
 import React, { Component } from "react";
-import { Redirect } from 'react-router-dom'
+import { withRouter, Link } from "react-router-dom";
 
 import { Button } from "antd";
 import style from "./index.module.css";
 import logoImg from "./logo_blue_full.png";
 import SingUpModal from "../SignUpModal";
 import LoginModal from "../LoginModal";
+import CartIcon from "../CartIcon";
+import context from "../context";
 
-export default class Header extends Component {
-
+class Header extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       signUpVisibility: false,
-      loginVisibility: false
+      loginVisibility: false,
+      isOnline: localStorage.getItem("token") ? true : false
     };
   }
 
@@ -42,8 +44,13 @@ export default class Header extends Component {
     });
   };
 
+  handleCoursesClick = () => {
+    if (this.state.isOnline) this.props.history.push("/ProfilePage");
+    else alert("você está offline!");
+  };
 
   render() {
+    const countCartItens = this.context.cart.itens.length;
     return (
       <>
         <SingUpModal
@@ -53,32 +60,53 @@ export default class Header extends Component {
         <LoginModal
           isVisible={this.state.loginVisibility}
           onCancel={this.handleLoginCancel}
+          onSubmit={this.context.handleLogin}
         />
 
         <header className={style.header}>
-          <img
-            className={style.logo}
-            alt="Masti Logo"
-            src={logoImg}
-          />
+          <Link to="/">
+            <img className={style.logo} alt="Logo" src={logoImg} />
+          </Link>
 
           <div className={style.container}>
-            <span className={style.cursos}>Cursos</span>
-            <div className={style.divider} />
-            <span
-              className={style.cursos}
-              onClick={this.handleSignUpVisibility}
-            >
-              Cadastrar-se
+            <span className={style.cursos} onClick={this.handleCoursesClick}>
+              Cursos
             </span>
+            <div className={style.divider} />
 
-            <Button
-              type="ghost"
-              className={style.btnEntrar}
-              onClick={this.handleLoginVisibility}
-            >
-              Entrar
-            </Button>
+            {this.state.isOnline ? (
+              <div>
+                <Link to="/">
+                  <span
+                    className={style.cursos}
+                    onClick={this.context.handleLogoff}
+                  >
+                    sair
+                  </span>
+                </Link>
+              </div>
+            ) : (
+              <div style={{ display: "flex", alignItems: "center" }}>
+                <span
+                  className={style.cursos}
+                  onClick={this.handleSignUpVisibility}
+                >
+                  Cadastrar-se
+                </span>
+
+                <Button
+                  type="ghost"
+                  className={style.btnEntrar}
+                  onClick={this.handleLoginVisibility}
+                >
+                  Entrar
+                </Button>
+              </div>
+            )}
+
+            <Link to="/Checkout" style={{ marginLeft: "35px" }}>
+              <CartIcon count={countCartItens} />
+            </Link>
           </div>
         </header>
         <div className={style.rect2} />
@@ -86,3 +114,6 @@ export default class Header extends Component {
     );
   }
 }
+
+Header.contextType = context;
+export default withRouter(Header);

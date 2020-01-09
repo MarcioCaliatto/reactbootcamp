@@ -10,7 +10,6 @@ export default class Card extends Component {
           src={this.props.thumbnail}
           className={style.cursoImage}
         />
-        <div className={style.separator} />
         <span className={style.cursoTitle}>
           <b>{this.props.title}</b>
         </span>

@@ -38,36 +38,23 @@ class ListaCursos extends Component {
         console.log("Error", error.message);
       }
       console.log(error.config);
-    } 
+    }
   }
 
-  async handleCardClick(id){
-    console.log(id)
-    const endPoint = 'http://localhost:4000/courses/'
-    
-    //endpoint /courses/: id?_embed=classes
-    try{
-      const getCourseDetails = await Axios.get(endPoint + id + '?_embed=classes')
-      this.props.history.push("/CoursePage", { data: getCourseDetails.data})
-    }
-    catch (error) {
-      if (error.response)
-        this.props.history.push("/Error404")
-      else 
-        this.props.history.push("/Error500")
-    } 
+  handleCardClick = id => {
+    this.props.history.push("/CoursePage/" + id);
   };
 
   render() {
     const coursesStyle = {
       display: "flex",
       alignItems: "center",
-      justifySelf: 'center',
-      flexWrap: 'wrap',
-      maxWidth: '1256px'
+      justifySelf: "center",
+      flexWrap: "wrap",
+      maxWidth: "1256px"
     };
 
-    const coursesComponent = this.state.data.map((course) => {
+    const coursesComponent = this.state.data.map(course => {
       return (
         <Card
           key={course.id}
@@ -82,8 +69,14 @@ class ListaCursos extends Component {
     });
 
     if (this.state.isLoading) {
-      return <Spin spinning={this.state.isLoading} size="large" style={{marginBottom: '200px', marginLeft: '32px'}}/>;
-    } else return <div style={ coursesStyle }>{coursesComponent}</div>;
+      return (
+        <Spin
+          spinning={this.state.isLoading}
+          size="large"
+          style={{ marginBottom: "200px", marginLeft: "32px" }}
+        />
+      );
+    } else return <div style={coursesStyle}>{coursesComponent}</div>;
   }
 }
 

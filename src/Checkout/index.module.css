@@ -1,0 +1,112 @@
+.itemStyle {
+  display: flex;
+  width: 1216px;
+  height: 123px;
+
+  align-items: center;
+  margin-left: 352px;
+  margin-top: 35px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.itemDesc {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  margin-top: 10px;
+
+  color: #bdbdbd;
+}
+
+.itemTitle {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+
+  letter-spacing: -1px;
+
+  color: #333333;
+}
+
+.idHolder {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.courseHolder {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+}
+
+.valueHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 15px;
+}
+
+.courseImage {
+  width: 176px;
+  height: 940x;
+
+  justify-self: flex-start;
+  margin-left: 15px;
+
+  border-radius: 6px;
+}
+
+.carrinho {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+
+  letter-spacing: -1px;
+
+  color: #333333;
+}
+
+.divCarrinho {
+  margin-top: 108px;
+  margin-left: 352px;
+}
+
+.divPagamento {
+  margin-top: 150px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+
+  letter-spacing: -1px;
+  color: #2f71fd;
+
+  margin-left: 352px;
+}
+
+.paymentContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.paymentForm {
+  margin-top: 30px;
+  width: 592px;
+  padding: 15px 25px 0px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}

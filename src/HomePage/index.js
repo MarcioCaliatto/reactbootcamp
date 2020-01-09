@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import context from "../context";
 import Header from "../Header";
 import Banner from "../Banner";
 import Footer from "../Footer";
@@ -7,14 +8,25 @@ import Body from "../Body";
 
 export default class HomePage extends Component {
   render() {
-    return (
-      <div>
-        <Header />
-        <Banner />
-        <Countdown />
-        <Body />
-        <Footer />
-      </div>
-    );
+    if (this.context.isOnline)
+      return (
+        <div>
+          <Header />
+          <Body />
+          <Footer />
+        </div>
+      );
+    else
+      return (
+        <div>
+          <Header />
+          <Banner />
+          <Countdown />
+          <Body />
+          <Footer />
+        </div>
+      );
   }
 }
+
+HomePage.contextType = context;

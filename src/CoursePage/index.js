@@ -1,48 +1,68 @@
 import React, { Component } from "react";
+import Axios from "axios";
+import { withRouter } from "react-router-dom";
+
 import Header from "../Header";
 import CourseBody from "../CourseBody";
 import Footer from "../Footer";
-// import { Container } from './styles';
 
-export default class CoursePage extends Component {
+class CoursePage extends Component {
   constructor(props) {
     super(props);
 
-    const path = props.location.state.data;
-
-    if(!path || path === null) {
-      this.props.history.push('/Error404')
-    }
-
     this.state = {
-      courseTitle: path.title,
-      courseDesc: path.description,
-      courseInstructor: path.instructor,
-      coursePrice: path.price,
-      courseRequirement: path.requirements,
-      courseThumbnail: path.thumbnail,
-      classesData: path.classes
+      data: {}
     };
   }
 
-  componentDidMount(){
+  async componentDidMount() {
     window.scrollTo(0, 0);
-}
+
+    try {
+      const courseRequest = await Axios.get(
+        `http://localhost:4000/courses/${this.props.match.params.id}?_embed=classes`
+      );
+      this.setState({
+        data: courseRequest.data,
+        isLoading: false
+      });
+    } catch (error) {
+      if (error.response) {
+        // The request was made and the server responded with a status code
+        // that falls out of the range of 2xx
+        console.log(error.response.data);
+        console.log(error.response.status);
+        console.log(error.response.headers);
+      } else if (error.request) {
+        // The request was made but no response was received
+        // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+        // http.ClientRequest in node.js
+        console.log(error.request);
+      } else {
+        // Something happened in setting up the request that triggered an Error
+        console.log("Error", error.message);
+      }
+      console.log(error.config);
+    }
+  }
 
   render() {
     return (
       <div>
         <Header />
         <CourseBody
-          title={this.state.courseTitle}
-          description={this.state.courseDesc}
-          instructor={this.state.courseInstructor}
-          thumbnail={this.state.courseThumbnail}
-          price={this.state.coursePrice}
-          classesData={this.state.classesData}
+          title={this.state.data.title}
+          description={this.state.data.description}
+          instructor={this.state.data.instructor}
+          thumbnail={"/".concat(this.state.data.thumbnail)}
+          price={this.state.data.price}
+          classesData={this.state.data.classes}
+          courseID={this.state.data.id}
         />
         <Footer />
       </div>
     );
   }
 }
+
+export default withRouter(CoursePage);

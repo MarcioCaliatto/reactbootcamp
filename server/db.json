@@ -1,0 +1,350 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Fulano",
+      "surname": "Da Silva",
+      "birthdate": "03/11/1983",
+      "cpf": "022.784.240-50",
+      "email": "teste@teste.com",
+      "password": "123456"
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "title": "Curso 1",
+      "description": "Descrição 1",
+      "requirements": "Requerimentos 1",
+      "instructor": "Instrutor 1",
+      "price": "19,90",
+      "thumbnail": "curso1.png"
+    },
+    {
+      "id": 2,
+      "title": "Curso 2",
+      "description": "Descrição 2",
+      "requirements": "Requerimentos 2",
+      "instructor": "Instrutor 2",
+      "price": "29,90",
+      "thumbnail": "curso2.png"
+    },
+    {
+      "id": 3,
+      "title": "Curso 3",
+      "description": "Descrição 3",
+      "requirements": "Requerimentos 3",
+      "instructor": "Instrutor 3",
+      "price": "49,90",
+      "thumbnail": "curso3.png"
+    },
+    {
+      "id": 4,
+      "title": "Curso 4",
+      "description": "Descrição ",
+      "requirements": "Requerimentos 4",
+      "instructor": "Instrutor 4",
+      "price": "79,90",
+      "thumbnail": "curso4.png"
+    },
+    {
+      "id": 5,
+      "title": "Curso 5",
+      "description": "Descrição 5",
+      "requirements": "Requerimentos 5",
+      "instructor": "Instrutor 5",
+      "price": "9,90",
+      "thumbnail": "curso1.png"
+    },
+    {
+      "id": 6,
+      "title": "Curso 6",
+      "description": "Descrição 6",
+      "requirements": "Requerimentos 6",
+      "instructor": "Instrutor 6",
+      "price": "19,90",
+      "thumbnail": "curso2.png"
+    },
+    {
+      "id": 7,
+      "title": "Curso 7",
+      "description": "Descrição 7",
+      "requirements": "Requerimentos 7",
+      "instructor": "Instrutor 7",
+      "price": "59,90",
+      "thumbnail": "curso3.png"
+    },
+    {
+      "id": 8,
+      "title": "Curso 8",
+      "description": "Descrição 8",
+      "requirements": "Requerimentos 8",
+      "instructor": "Instrutor 8",
+      "price": "99,90",
+      "thumbnail": "curso4.png"
+    }
+  ],
+  "classes": [
+    {
+      "id": 1,
+      "title": "Fusce eu tortor in mi cursus tristique.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 1
+    },
+    {
+      "id": 2,
+      "title": "Nunc eu velit a nulla fringilla dictum",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=8V5poSSpQm0",
+      "courseId": 1
+    },
+    {
+      "id": 3,
+      "title": "Cras auctor erat sit amet dignissim sodales.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 1
+    },
+    {
+      "id": 4,
+      "title": "Sed facilisis diam et fringilla viverra.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 1
+    },
+    {
+      "id": 5,
+      "title": "Etiam semper mi eu enim aliquam auctor.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 2
+    },
+    {
+      "id": 6,
+      "title": "Sed facilisis diam et fringilla viverra.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 2
+    },
+    {
+      "id": 7,
+      "title": "Fusce eu tortor in mi cursus tristique.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 2
+    },
+    {
+      "id": 8,
+      "title": "Cras auctor erat sit amet dignissim sodales.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 2
+    },
+    {
+      "id": 9,
+      "title": "Etiam semper mi eu enim aliquam auctor.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 3
+    },
+    {
+      "id": 10,
+      "title": "Sed facilisis diam et fringilla viverra.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 3
+    },
+    {
+      "id": 11,
+      "title": "Fusce eu tortor in mi cursus tristique.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 3
+    },
+    {
+      "id": 12,
+      "title": "Cras auctor erat sit amet dignissim sodales.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 3
+    },
+    {
+      "id": 13,
+      "title": "Etiam semper mi eu enim aliquam auctor.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 4
+    },
+    {
+      "id": 14,
+      "title": "Sed facilisis diam et fringilla viverra.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 4
+    },
+    {
+      "id": 15,
+      "title": "Fusce eu tortor in mi cursus tristique.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 4
+    },
+    {
+      "id": 16,
+      "title": "Cras auctor erat sit amet dignissim sodales.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 4
+    },
+    {
+      "id": 17,
+      "title": "Etiam semper mi eu enim aliquam auctor.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 5
+    },
+    {
+      "id": 18,
+      "title": "Sed facilisis diam et fringilla viverra.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 5
+    },
+    {
+      "id": 19,
+      "title": "Fusce eu tortor in mi cursus tristique.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 5
+    },
+    {
+      "id": 20,
+      "title": "Cras auctor erat sit amet dignissim sodales.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 5
+    },
+    {
+      "id": 21,
+      "title": "Etiam semper mi eu enim aliquam auctor.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 6
+    },
+    {
+      "id": 22,
+      "title": "Sed facilisis diam et fringilla viverra.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 6
+    },
+    {
+      "id": 23,
+      "title": "Fusce eu tortor in mi cursus tristique.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 6
+    },
+    {
+      "id": 24,
+      "title": "Cras auctor erat sit amet dignissim sodales.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 6
+    },
+    {
+      "id": 25,
+      "title": "Etiam semper mi eu enim aliquam auctor.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 7
+    },
+    {
+      "id": 26,
+      "title": "Sed facilisis diam et fringilla viverra.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 7
+    },
+    {
+      "id": 27,
+      "title": "Fusce eu tortor in mi cursus tristique.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 7
+    },
+    {
+      "id": 28,
+      "title": "Cras auctor erat sit amet dignissim sodales.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 7
+    },
+    {
+      "id": 29,
+      "title": "Etiam semper mi eu enim aliquam auctor.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 8
+    },
+    {
+      "id": 30,
+      "title": "Sed facilisis diam et fringilla viverra.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 8
+    },
+    {
+      "id": 31,
+      "title": "Fusce eu tortor in mi cursus tristique.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 8
+    },
+    {
+      "id": 32,
+      "title": "Cras auctor erat sit amet dignissim sodales.",
+      "duration": "05:27",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "courseId": 8
+    }
+  ],
+  "userCourses": [
+    {
+      "userId": 1,
+      "courseId": 2,
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "courseId": 4,
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "courseId": 8,
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "courseId": 6,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "courseId": 3,
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "courseId": 5,
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "courseId": 1,
+      "id": 7
+    }
+  ]
+}

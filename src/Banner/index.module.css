@@ -1,6 +1,6 @@
 .fullBox {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -81,11 +81,9 @@
 .ilustra {
   display: flex;
   height: 507px;
-  justify-content: flex-end;
   
 }
 
 .ilustracao {
   width: 1048.01px;
-  height: 507px;
 }
